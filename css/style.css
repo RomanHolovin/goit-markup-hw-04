@@ -322,13 +322,19 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+
+.portfolio-button:hover{
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+  }
+  .portfolio-button:focus {
+    color: #ffffff;
+    background-color: #404bbf;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 .section-works {
   padding-bottom: 120px;
 }
