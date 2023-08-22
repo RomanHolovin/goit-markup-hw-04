@@ -117,23 +117,25 @@ address {
 .list-link-nav:focus {
   color: #404bbf;
 }
-.list-link-nav::after {
+.list-link-nav.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   bottom: -1px;
+   background-color: var(--ocean);
 }
 .nav-list-link .current {
   position: relative;
   color: var(--ocean);
 }
-.nav-list-link.current::after {
-  background-color: var(--ocean);
+.current {
+  position: relative;
+  color: #404bbf;
 }
 
 .link {
@@ -323,18 +325,18 @@ address {
   text-transform: capitalize;
 }
 
-.portfolio-button:hover{
+.portfolio-button:hover {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  .portfolio-button:focus {
-    color: #ffffff;
-    background-color: #404bbf;
-    border: 1px solid transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+}
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .section-works {
   padding-bottom: 120px;
 }
